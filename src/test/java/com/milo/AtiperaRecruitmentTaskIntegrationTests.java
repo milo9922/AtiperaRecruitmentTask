@@ -26,11 +26,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WireMockTest
 class AtiperaRecruitmentTaskIntegrationTests {
 
-    private static final String EXPECTED_USER_REPOS_WITH_BRANCHES_PATH = "json/app/user-repos-with-branches-expected.json";
+    private static final String EXPECTED_USER_REPOS_WITH_BRANCHES_PATH = "json/app/user-repos-with-branches-expected-200.json";
     private static final String USER_REPOS_PATH = "json/github/user-repos-200.json";
     private static final String GITHUB_NO_USER_REPOS_FOUND_PATH = "json/github/user-repos-404.json";
-    private static final String GITHUB_EXCEEDED_API_RATE_LIMIT_PATH = "json/github/exceeded-github-api-rate-limit.json";
-    private static final String APP_NO_USER_REPOS_FOUND_PATH = "json/app/user-not-found.json";
+    private static final String GITHUB_EXCEEDED_API_RATE_LIMIT_PATH = "json/github/exceeded-github-api-rate-limit-403.json";
+    private static final String APP_NO_USER_REPOS_FOUND_PATH = "json/app/user-not-found-404.json";
     private static final String MULTIPLE_BRANCHES_PATH = "json/github/branches-multiple.json";
     private static final String SINGLE_BRANCH_PATH = "json/github/branches-single-master.json";
     private static final String INVALID_HEADER_DATA_TYPE_PATH = "json/app/invalid-data-type-406.json";
